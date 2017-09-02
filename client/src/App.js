@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Navbar, NavItem, Row, Input, Carousel} from 'react-materialize';
+import {Navbar, NavItem, Row, Col, Input, Carousel} from 'react-materialize';
 
 class App extends Component {
 
