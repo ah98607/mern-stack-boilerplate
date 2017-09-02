@@ -16,6 +16,10 @@ class App extends Component {
     console.log(`this.state = ${this.state.user}`);
     return (
       <div className="App">
+        <Row>
+          <Col m={6}>A</Col>
+          <Col m={6}>B</Col>
+        </Row>
         <h1>Users</h1>
         {this.state.users.map(user => 
           <div key={user.id}>{user.name}</div>
