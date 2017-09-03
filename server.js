@@ -25,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // mongoose configuration
-var mongoose_db_name = "users"
+var mongoose_db_name = "UserDB"
 mongoose.connect("mongodb://localhost/" + mongoose_db_name);
 
 app.use('/', routes);
