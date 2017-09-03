@@ -38,6 +38,16 @@ var models = {
             }
         });
     },
+    removedByName: function(name, callback) {
+        User.findOneAndRemove({name: name}, function(err, data) {
+            if (err) {
+                console.log(err);
+            }
+            else {
+                callback(data);
+            }
+        });
+    },
     removeAll: function(callback) {
         User.remove(function(err, data) {
             if (err) {
