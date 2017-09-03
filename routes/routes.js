@@ -3,7 +3,7 @@ var router = express.Router();
 var models = require('../models/models.js');
 
 /* GET users listing. */
-router.get('/123', function(req, res, next) {
+router.get('/123', function(req, res) {
 	console.log("/123 called");
 	models.removeAll(function(data) {
 		models.add("Andy", function(data) {
