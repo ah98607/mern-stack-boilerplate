@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import {Navbar, NavItem, Row, Col, Input, Carousel} from 'react-materialize';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import {Navbar, NavItem, Row, Col, Input, Carousel} from "react-materialize";
 
 class App extends Component {
 
   state = {users: []};
 
   componentDidMount() {
-    fetch('/123').then(res => res.json()).then(users => this.setState({users}));
+    fetch("/123").then(res => res.json()).then(users => this.setState({users}));
   }
 
   render() {
