@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, "public")));
 // mongoose configuration
 var mongoose_db_name = "UserDB"
 mongoose.connect("mongodb://localhost/" + mongoose_db_name);
+//mongoose.connect("mongodb://heroku_dvvfddmk:dl13pf5q1rrinhhia5n6jr734p@ds121674.mlab.com:21674/heroku_dvvfddmk");
 
 app.use("/", routes);
 
