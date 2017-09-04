@@ -26,11 +26,15 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // mongoose configuration
 if (process.env.MONGODB_URI) {
-  mongoose.connect("mongodb://heroku_dvvfddmk:dl13pf5q1rrinhhia5n6jr734p@ds121674.mlab.com:21674/heroku_dvvfddmk");
+  mongoose.connect("mongodb://heroku_dvvfddmk:dl13pf5q1rrinhhia5n6jr734p@ds121674.mlab.com:21674/heroku_dvvfddmk", {
+    useMongoClient: true
+  });
 }
 else {
   var mongoose_db_name = "UserDB";
-  mongoose.connect("mongodb://localhost/" + mongoose_db_name);
+  mongoose.connect("mongodb://localhost/" + mongoose_db_name, {
+    useMongoClient: true
+  });
 }
 
 app.use("/", routes);
