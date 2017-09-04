@@ -2,8 +2,13 @@
   "name": "mern-stack-boilerplate",
   "version": "0.0.0",
   "private": true,
+  "main": "server.js",
   "scripts": {
-    "start": "./node_modules/.bin/concurrently \"node server.js\" \"cd client && npm start\""
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "start": "./node_modules/.bin/concurrently \"node server.js\" \"cd client && npm start\"",
+    "build": "cd client && npm build",
+    "deploy": "npm build && git add . && git commit -m \"Building for production\" && git push heroku master && git push origin master"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
