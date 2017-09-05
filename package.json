@@ -4,11 +4,8 @@
   "private": true,
   "main": "server.js",
   "scripts": {
-    "server": "node server.js",
-    "client": "cd client && npm start",
-    "start": "./node_modules/.bin/concurrently \"node server.js\" \"cd client && npm start\"",
-    "build": "cd client && npm build",
-    "deploy": "npm build && git add . && git commit -m \"Building for production\" && git push heroku master && git push origin master"
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -19,6 +16,7 @@
     "jade": "^1.11.0",
     "mongoose": "^4.11.9",
     "morgan": "^1.8.2",
+    "path": "^0.12.7",
     "serve-favicon": "^2.4.3"
   }
 }
