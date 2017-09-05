@@ -5,7 +5,7 @@
 * Removed the second router js file
 * Added Heroku port configuration
 * Added Mongoose directory “models” and the data App.js tries to get.
-# Added Heroku mongoose configuration
+* Added Heroku mongoose configuration
 * Changed app.js to server.js
 * Installed module "concurrently" (not needed)
 * Changed top level package.json so it concurrently run two servers (not needed)
