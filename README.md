@@ -13,3 +13,16 @@
 * Changed route.js to handle "*" so it points to client/build/index.html
 * Changed server.js to make "build" static and public
 * Installed module "react-materialize", changed index.html and App.js to include materialize CSS
+
+# Notes
+* 19.2 hello world and how components are used to render the html
+* 19.2 customize div and pass JavaScript variables and fucntion into JSX
+* 19.2 props
+* 19.2 react-materialize
+* 19.3 array map/filter
+* 19.3 Friend list (review of props)
+* 19.3 decrement counter (intro to stateful component)
+* 19.3 Refactor friend list
+* 20.1 API call with axios (can also use "fetch")
+* 20.1 conditional rendering
+* 20.1 react router
