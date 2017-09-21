@@ -4,7 +4,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 // Create article schema
-var UserSchemaa = new Schema({
+var UserSchema = new Schema({
   // title is a required string
   name: {
     type: String,
@@ -13,7 +13,7 @@ var UserSchemaa = new Schema({
 });
 
 // Create the Article model with the ArticleSchema
-var User = mongoose.model("User", UserSchemaa);
+var User = mongoose.model("User", UserSchema);
 
 // ORM API
 var models = {
